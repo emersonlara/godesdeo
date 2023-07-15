@@ -37,7 +37,5 @@ func main() {
 		fmt.Println("E um darkwin")
 	default:
 		fmt.Printf("%s \n", os)
-
 	}
-
 }
