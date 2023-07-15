@@ -1,3 +1,3 @@
-module githube.com/lara/lara/godesdeo
+module github.com/emersonlara/godesdeo
 
 go 1.20
