@@ -2,6 +2,7 @@ package variables
 
 import (
 	"fmt"
+	"strconv"
 	"time"
 )
 
@@ -23,4 +24,10 @@ func RestoVariaveis() {
 	fmt.Println(DataFechamento)
 
 	//MostrarInteiros()
+}
+
+func ConverterTexto(numero int) (bool, string) {
+	var texto string
+	texto = strconv.Itoa(numero) //converte para alfa numeroci
+	return true, texto
 }
