@@ -2,11 +2,15 @@ package main
 
 import (
 	"fmt"
-	"runtime"
+	//	"runtime"
 
 	"github.com/emersonlara/godesdeo/exercicios"
-	"github.com/emersonlara/godesdeo/teclado"
+	//	"github.com/emersonlara/godesdeo/teclado"
+	"github.com/emersonlara/godesdeo/files"
+	"github.com/emersonlara/godesdeo/funcoes"
+	"github.com/emersonlara/godesdeo/iteracoes"
 	"github.com/emersonlara/godesdeo/variables"
+
 )
 
 func main() {
@@ -31,21 +35,41 @@ func main() {
 
 	//	}
 
-	if os := runtime.GOOS; os == "Linux." || os == "Ubuntu." {
-		fmt.Println("Sistema : ", os)
-	} else {
-		fmt.Println("Sistema : ", os)
+	/*
+		if os := runtime.GOOS; os == "Linux." || os == "Ubuntu." {
+			fmt.Println("Sistema : ", os)
+		} else {
+			fmt.Println("Sistema : ", os)
+		}
+
+		switch os := runtime.GOOS; os {
+		case "linux":
+			fmt.Println("E um linux")
+		case "darkwin":
+			fmt.Println("E um darkwin")
+		default:
+			fmt.Printf("%s \n", os)
+		}
+	*/
+	//	teclado.IngressoNumeros()
+
+	for {
+
+		fmt.Println("Emerson Lara no for")
+		break
 	}
 
-	switch os := runtime.GOOS; os {
-	case "linux":
-		fmt.Println("E um linux")
-	case "darkwin":
-		fmt.Println("E um darkwin")
-	default:
-		fmt.Printf("%s \n", os)
-	}
+	iteracoes.Iterar()
+	//iteracoes.Iteracao()
+	//iteracoes.Iteracao2()
+	//iteracoes.IteracaoInversa()
+	//iteracoes.IteracaoInversa2()
+	//exercicios.TabelaMultiplica()
+	//fmt.Println(exercicios.TabelaMultiplica2cont())
 
-	teclado.IngressoNumeros()
+	//files.GravaTabudada()
+	files.GravaTabudada()
+
+	funcoes.Calculo()
 
 }
